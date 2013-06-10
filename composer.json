@@ -1,0 +1,23 @@
+{
+    "name": "juncture/discuss",
+    "description": "",
+    "authors": [
+        {
+            "name": "Dave Shoreman",
+            "email": "codeM0nK3Y@me.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Juncture\\Discuss": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
