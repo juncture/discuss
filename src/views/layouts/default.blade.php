@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" href="{{ $discuss_css }}/bootstrap.min.css" />
 	<link rel="stylesheet" href="{{ $discuss_css }}/todc-bootstrap.css" />
+	<link rel="stylesheet" href="{{ $discuss_css }}/bootstrap-wysihtml5.css" />
 	<link rel="stylesheet" href="{{ $discuss_css }}/select2.css" />
 	<link rel="stylesheet" href="{{ $discuss_css }}/custom.css" />
 </head>
@@ -47,6 +48,8 @@
 
 	<script src="{{ $discuss_js }}/jquery.min.js"></script>
 	<script src="{{ $discuss_js }}/bootstrap.min.js"></script>
+	<script src="{{ $discuss_js }}/wysihtml5-0.3.0.js"></script>
+	<script src="{{ $discuss_js }}/bootstrap-wysihtml5.js"></script>
 	<script src="{{ $discuss_js }}/select2.min.js"></script>
 	<script src="{{ $discuss_js }}/discuss.js"></script>
 

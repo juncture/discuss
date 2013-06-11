@@ -5,3 +5,7 @@ body {
 .well.nav-well {
 	padding: 8px 0;
 }
+.well.editor {
+	/* Extreme padding needed to offset wysihtml5's high width */
+	padding-right: 34px;
+}

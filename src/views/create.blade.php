@@ -19,13 +19,13 @@
 		<div class="control-group">
 			<label class="control-label" for="postTitle">Title</label>
 			<div class="controls">
-				<input class="input-xxlarge" type="text" id="postTitle" placeholder="My awesome relevant post title"/>
+				<input class="span10" type="text" id="postTitle" placeholder="My awesome relevant post title"/>
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label" for="postTitle">Tags</label>
 			<div class="controls">
-				<select class="input-xlarge" id="postTags" multiple="multiple">
+				<select class="span10" id="postTags" multiple="multiple">
 					<option value="client">Client</option>
 					<option value="server">Server</option>
 					<option value="offtopic">Off-topic</option>
@@ -35,7 +35,11 @@
 		<div class="control-group">
 			<label class="control-label" for="postText">Message</label>
 			<div class="controls">
-				<textarea class="input-xxlarge" rows="5" id="postAuthor" placeholder="Lorem ipsum dolor sit amet..."></textarea>
+				<div class="span10">
+				<div class="editor well">
+					<textarea class="textarea span12" rows="5" id="postAuthor" placeholder="Lorem ipsum dolor sit amet..."></textarea>
+				</div>
+			</div>
 				{{--<!-- TODO: add bootstrap-wysihtml5 -->--}}
 			</div>
 		</div>
