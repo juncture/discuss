@@ -25,8 +25,11 @@
 		<div class="control-group">
 			<label class="control-label" for="postTitle">Tags</label>
 			<div class="controls">
-				<input class="input-xxlarge" type="text" id="postTags" placeholder="foo,bar,baz"/>
-				{{--<!-- TODO: add todc-select2 multi-select -->--}}
+				<select class="input-xlarge" id="postTags" multiple="multiple">
+					<option value="client">Client</option>
+					<option value="server">Server</option>
+					<option value="offtopic">Off-topic</option>
+				</select>
 			</div>
 		</div>
 		<div class="control-group">
