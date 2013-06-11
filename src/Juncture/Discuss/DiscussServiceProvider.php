@@ -19,6 +19,8 @@ class DiscussServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('juncture/discuss');
+
+		include __DIR__.'/../../routes.php';
 	}
 
 	/**
