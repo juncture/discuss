@@ -1,19 +1,14 @@
-<?php
+<?php namespace Juncture\Discuss;
+
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\URL;
 
 Route::group(array('prefix' => Config::get('discuss::route')), function()
 {
-	Route::get('/', array('as' => 'discuss.index', function()
-	{
-		return View::make('discuss::layouts.default')
-				->nest('content', 'discuss::list')
-				->nest('left_nav', 'discuss::_navigation');
-	}));
-
-	Route::get('new', array('as' => 'discuss.new_post', function()
-	{
-		return View::make('discuss::layouts.default')
-				->nest('content', 'discuss::create');
-	}));
+	Route::get('/', array('as' => 'discuss.index', 'uses' => 'Juncture\Discuss\PostController@index'));
+	Route::get('new', array('as' => 'discuss.new_post', 'uses' => 'Juncture\Discuss\PostController@newPost'));
 });
 
 
